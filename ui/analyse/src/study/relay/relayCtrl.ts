@@ -51,9 +51,8 @@ export default class RelayCtrl {
   };
 
   private convertDate = (r: StudyChapterRelay): StudyChapterRelay => {
-    if (typeof r.secondsSinceLastMove !== 'undefined' && !r.lastMoveAt) {
+    if (typeof r.secondsSinceLastMove !== 'undefined' && !r.lastMoveAt)
       r.lastMoveAt = Date.now() - r.secondsSinceLastMove * 1000;
-    }
     return r;
   };
 

@@ -19,7 +19,7 @@ def update_details(event):
     color_initial = choice(['w', 'b'])
     piece_abbr = piece_abbreviations.get(selected_piece, '')
     
-    image_path = os.path.join(script_dir, 'public', 'images', 'california', f"{color_initial}{piece_abbr}.png")
+    image_path = os.path.join(script_dir 'images', 'california', f"{color_initial}{piece_abbr}.png")
     
     try:
         photo = ImageTk.PhotoImage(Image.open(image_path))
